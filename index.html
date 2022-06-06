@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Player</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="player_container">
+      <video
+        src="https://pixabay.com/videos/download/video-41758_source.mp4?attachment"
+        playsinline
+      ></video>
+      <!-- Show Controls -->
+      <div class="show_controls">
+        <div class="control_container">
+          <!-- Progres bar -->
+          <div class="progress_range" title="Seek">
+            <div class="progress_bar"></div>
+          </div>
+          <div class="control_group">
+            <div class="controls_left">
+              <!-- Play pause -->
+              <div class="play_controls">
+                <i class="fas fa-play" title="Play" id="play_btn"></i>
+              </div>
+              <!-- Volume -->
+              <div class="volume">
+                <div class="volume_icon">
+                  <i class="fas fa-volume-up" title="Mute" id="voulme_btn"></i>
+                </div>
+                <div class="volume_range" title="Change Volume">
+                  <div class="volume_bar"></div>
+                </div>
+              </div>
+            </div>
+            <div class="controls_right">
+              <!-- Playback Speed -->
+              <div class="speed" title="Playback speed">
+                <select name="playbackRate" id="" class="player_speed">
+                  <option value="0.5">0.5 x</option>
+                  <option value="0.75">0.75 x</option>
+                  <option value="1" selected="selected">1 x</option>
+                  <option value="1.5">1.5 x</option>
+                  <option value="2">2 x</option>
+                </select>
+              </div>
+              <!-- Time Display -->
+              <div class="time">
+                <span class="time_elapsed"> </span>
+                <span class="time_duaration"> </span>
+              </div>
+              <!-- Full Screen -->
+              <div class="fullscreen">
+                <i class="fas fa-expand"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
