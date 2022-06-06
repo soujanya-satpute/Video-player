@@ -1,3 +1,4 @@
+
 const video = document.querySelector('video')
 const player = document.querySelector('.player_container')
 const progressRange = document.querySelector('.progress_range')
